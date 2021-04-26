@@ -3,6 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        SayiBulmaca();
+    }
+
+    public static void SayiBulmaca(){
         int[] numbers = new int[]{1,2,5,7,9,0};
         int founder = 5;
         boolean isThere=false;
