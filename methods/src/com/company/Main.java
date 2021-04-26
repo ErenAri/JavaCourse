@@ -17,14 +17,15 @@ public class Main {
                 break;
             }
         }
+        String message="";
         if (isThere){
-            GiveMessage(founder);
+            GiveMessage("Sayı mevcuttur "+founder);
         }else {
-            System.out.println("Sayı mevcut değildir "+founder);
+            GiveMessage("Sayı mevcut değildir "+founder);
         }
     }
 
-    public static void GiveMessage(int founder){
-        System.out.println("Sayı mevcuttur "+founder);
+    public static void GiveMessage(String message){
+        System.out.println(message);
     }
 }
