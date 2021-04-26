@@ -3,10 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        SayiBulmaca();
+        NumberFounder();
     }
 
-    public static void SayiBulmaca(){
+    public static void NumberFounder(){
         int[] numbers = new int[]{1,2,5,7,9,0};
         int founder = 5;
         boolean isThere=false;
@@ -18,9 +18,13 @@ public class Main {
             }
         }
         if (isThere){
-            System.out.println("Sayı mevcuttur");
+            GiveMessage(founder);
         }else {
-            System.out.println("Sayı mevcut değildir");
+            System.out.println("Sayı mevcut değildir "+founder);
         }
+    }
+
+    public static void GiveMessage(int founder){
+        System.out.println("Sayı mevcuttur "+founder);
     }
 }
